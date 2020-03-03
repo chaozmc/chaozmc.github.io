@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: ChaozMc :: YANG
+title: "ChaozMc :: YANG"
 email: chaozmc@is-jo.org
 description: >- # this means to ignore newlines until "baseurl:"
   YANG (Yet another nerdy guy)
@@ -27,9 +27,11 @@ url: "https://chaozmc.github.io" # the base hostname & protocol for your site, e
 github_username:  chaozmc
 
 # Build settings
-theme: minima
+#theme: minima
+remote_theme: songzivong/dark-minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
