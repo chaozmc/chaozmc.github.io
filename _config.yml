@@ -1,3 +1,4 @@
+#Jekyll Config
 
 title: "ChaozMc :: YANG"
 author: ChaozMc
@@ -5,6 +6,8 @@ email: chaozmc@is-jo.org
 description: > # this means to ignore newlines until "show_exerpts:"
   YANG (Yet Another Nerdy Guy)
 show_excerpts: false # set to true to show excerpts on the homepage
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://chaozmc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -12,14 +15,14 @@ minima:
   date_format: "%b %-d, %Y"
 
   # generate social links in footer
-  social_links:
+social_links:
     #twitter: jekyllrb
-    github:  chaozmc
+  github:  chaozmc
     #rss: rss
     # dribbble: jekyll
-    facebook: markus.feiler
+  facebook: markus.feiler
     # flickr:   jekyll
-    instagram: chaozmc
+  instagram: chaozmc
     # linkedin: jekyll
     # pinterest: jekyll
     # youtube: jekyll
@@ -39,8 +42,8 @@ minima:
 remote_theme: songzivong/dark-minima
 
 plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
+- jekyll-feed
+- jekyll-remote-theme
  - jekyll-seo-tag
  - jekyll-sitemap
  - jemoji
