@@ -1,49 +1,41 @@
 #Jekyll Config
 
 title: "ChaozMc :: YANG"
-author: ChaozMc
 email: chaozmc@is-jo.org
-description: > # this means to ignore newlines until "show_exerpts:"
-  YANG (Yet Another Nerdy Guy)
-show_excerpts: false # set to true to show excerpts on the homepage
+description: YANG (Yet Another Nerdy Guy)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://chaozmc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
-  date_format: "%b %-d, %Y"
+author-name:   ChaozMc
+author-avatar: max.jpg
 
-  # generate social links in footer
-social_links:
-    #twitter: jekyllrb
-  github:  chaozmc
-    #rss: rss
-    # dribbble: jekyll
-  facebook: markus.feiler
-    # flickr:   jekyll
-  instagram: chaozmc
-    # linkedin: jekyll
-    # pinterest: jekyll
-    # youtube: jekyll
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
-    # telegram: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
+instafeed: false
 
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
+facebook:  https://facebook.com/markus.feiler # Add your Facebook handle
+instagram: https://www.instagram.com/chaozmc # Add your Facebook handle
+github: https://github.com/chaozmc
 
-remote_theme: songzivong/dark-minima
+
+markdown: kramdown
+permalink: ':title/'
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 7
+paginate_path: "/page/:num"
+
+include:
+  - _pages
+
+
+sass:
+  sass_dir: _sass
+  style: compressed
 
 plugins:
 - jekyll-feed
 - jekyll-remote-theme
- - jekyll-seo-tag
- - jekyll-sitemap
- - jemoji
+- jekyll-seo-tag
+- jekyll-sitemap
+- jemoji

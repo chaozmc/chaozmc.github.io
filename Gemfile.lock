@@ -17,12 +17,6 @@ GEM
     commonmarker (0.17.13)
       ruby-enum (~> 0.5)
     concurrent-ruby (1.1.6)
-    dark-minima (0.1.1)
-      jekyll (~> 3.5)
-      jekyll-feed (~> 0.9)
-      jekyll-seo-tag (~> 2.1)
-      jekyll-sitemap (~> 1.3)
-      jemoji (~> 0.11)
     dnsruby (1.61.3)
       addressable (~> 2.5)
     em-websocket (0.5.1)
@@ -251,11 +245,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  dark-minima
   github-pages (~> 204)
   jekyll-feed (~> 0.12)
-  jekyll-remote-theme
-  minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
